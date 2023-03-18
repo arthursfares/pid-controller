@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: ghostwhite;
+}
+
+canvas {
+  border-radius: 0 40px 40px 0;
+}
+
+.canvasContainer {
+  width: 800px;
+  display: block;
+  border-radius: 0 40px 40px 0;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.info {
+  border-radius: 40px 0 0 40px;
+  height: 800px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 100px;
+  background-color: white;
+  border-radius: 40px 0 0 0;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial;
+}
+.Kp { background-color: orange; }
+.Ki { background-color: green; }
+.Kd { background-color: red; }
+
+input[type="number"] {
+  text-align: center;
+  width: 50%;
+  font-size: 50px;
+  padding: 10px;
+  outline: none;
+  appearance: textfield;
+  border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.plots {
+  border-radius: 0 0 0 40px;
+  overflow: hidden;
+}
+
+.plot {
+  width: 800px;
+  height: 350px;
+}
+
+#overlay {
+  position:absolute;
+  left: 81.2%;
+}

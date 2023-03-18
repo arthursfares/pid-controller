@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PID controller</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="libraries/plotly-2.18.2.min.js"></script>
+</head>
+
+<body>
+
+  <div class="top">
+
+    <div class="info">
+      <div class="controls">
+        <div class="control">
+          <div class="label Kp">Kp</div>
+          <input type="number" id="kp-input" value="0.2" step="0.01" />
+        </div>
+        <div class="control">
+          <div class="label Ki">Ki</div>
+          <input type="number" id="ki-input" value="0.01" step="0.001" />
+        </div>
+        <div class="control">
+          <div class="label Kd">Kd</div>
+          <input type="number" id="kd-input" value="0.1" step="0.01" />
+        </div>
+      </div>
+
+      <div class="plots">
+        <div class="plot" id="result-plot"></div>
+        <div class="plot" id="pid-plot"></div>
+      </div>
+    </div>
+
+    <div id="canvasContainer">
+      <div id="overlay">
+        <img src="https://media.tenor.com/cLm1I_6dU5MAAAAj/what-do-we-have-there-nick-cage.gif" alt="">
+      </div>
+    </div>
+
+    <script src="plot.js"></script>
+    <script src="sketch.js"></script>
+
+  </div>
+
+  <div class="bottom">
+    <p>PID controller example. Drag the ball to alter the process variable. To disable one of the graph traces, tap on the label.
+      Controller constants can be modified on top.</p>
+    <p>Made with 💙 and ☕</p>
+  </div>
+
+</body>
+
+</html>
